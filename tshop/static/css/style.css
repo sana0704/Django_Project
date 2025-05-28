@@ -1,0 +1,99 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: blue; */
+    header{
+        z-index: 10;
+        height: 40px;
+        nav{
+            height: 100%;
+        }
+    }
+
+    main{
+       margin-top: 52px;
+       margin-bottom: 25px;
+
+     /* style for product container */
+       .product-container{
+        max-width: 850px;
+        margin-top: 20px;
+        margin: auto;
+        z-index: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        
+        .card{
+            width: 200px;
+            height: 250px;
+            margin: auto;
+            margin-top: 20px;
+            overflow: hidden;
+             box-shadow: 1px 1px 1px 1px rgb(194, 194, 194);
+                background-color: rgb(238, 251, 255);
+                transition-duration: 2s;
+
+            .card-img{
+                height: 60%;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition-duration: 2s;
+                    filter: brightness(30%) saturate(30%);
+                }
+            }
+
+            .card-body{
+                padding: 5px;
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            
+                .card-title, .card-text{
+                    padding: 2px;
+                    height: 25px;
+                    margin-bottom: 0;
+                }
+
+
+                a {
+                width:50%;
+                font-size: small;
+                height: 30px;
+                padding: 3px;
+                margin: auto;
+            }
+            }}
+
+        .card:hover{
+            background-color: white;
+            transition-duration: 0.5s;
+            box-shadow: 1px 1px 2px 1px rgb(62, 213, 255);
+                transform: scale(1.05);
+
+                .card-img{
+                    img{
+                        filter: brightness(100%) saturate(50%);
+                        transition-duration: 0.5s;
+                    }
+                }
+        }
+     }
+    }
+
+    footer{
+        height: 25px;
+
+    }
+}
